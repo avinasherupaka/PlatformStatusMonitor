@@ -1,0 +1,39 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react",
+    "standard-jsx"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise",
+    "standard"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__COVERAGE__" : false,
+    "__BASENAME__" : false,
+    "__LAMBSTATUS_API_URL__" : '',
+    "__LAMBSTATUS_STATUS_PAGE_URL__" : '',
+    "__LAMBSTATUS_SERVICE_NAME__" : '',
+    "__LAMBSTATUS_USER_POOL_ID__" : '',
+    "__LAMBSTATUS_CLIENT_ID__" : '',
+    "__LAMBSTATUS_STATUS_PAGE_S3_BUCKET_URL__" : '',
+    "dialogPolyfill"   : {},
+    "componentHandler" : {},
+  },
+  "rules": {
+    "semi" : [2, "never"],
+    "max-len": [2, { "code": 120, "tabWidth": 2, "ignoreTemplateLiterals": true }],
+    "generator-star-spacing": 0,
+    "babel/generator-star-spacing": 1,
+    "jsx-quotes": [2, "prefer-single"]
+  }
+}

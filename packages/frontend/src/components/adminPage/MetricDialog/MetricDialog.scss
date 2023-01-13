@@ -1,0 +1,38 @@
+.dialog {
+  width: 560px;
+}
+
+.title {
+  font-size: 2.0rem;
+}
+
+.metric-type {
+  padding-bottom: 10px;
+}
+
+.metric-status {
+  padding-top: 10px;
+}
+
+.advanced {
+  font-size: 14px;
+  padding-top: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+// Using !important is the canonical way to change the appearance of the tooltip
+.tooltip {
+  background-color: #777 !important;
+  padding: 3px 10px !important;
+}
+
+.tooltip::after {
+  border-right-color: #777 !important;
+}
+
+.icon {
+  font-size: 18px;
+  font-weight: 600;
+  vertical-align: top;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "lamb-status",
+  "version": "0.6.4",
+  "description": "AVI Serverless Status Pages",
+  "repository": {
+    "type": "git",
+    "url": "https://github.platforms.engineering/AERUP/LambStatus"
+  },
+  "scripts": {
+    "cloudformation:create": "cloudformation/bin/stack.sh create",
+    "cloudformation:update": "cloudformation/bin/stack.sh update",
+    "cloudformation:delete": "cloudformation/bin/stack.sh delete",
+    "cloudformation:release": "cloudformation/bin/release.sh",
+    "lambda:install": "cd packages/lambda && npm install",
+    "lambda:clean": "cd packages/lambda && npm run clean",
+    "lambda:build": "cd packages/lambda && npm run build",
+    "lambda:deploy": "cd packages/lambda && npm run deploy",
+    "lambda:release": "cd packages/lambda && npm run release",
+    "frontend:install": "cd packages/frontend && npm install",
+    "frontend:clean": "cd packages/frontend && npm run clean",
+    "frontend:build": "cd packages/frontend && npm run build",
+    "frontend:deploy": "cd packages/frontend && npm run deploy",
+    "frontend:release": "cd packages/frontend && npm run release",
+    "frontend:start": "cd packages/frontend && npm run start",
+    "install": "npm run lambda:install && npm run frontend:install",
+    "clean": "npm run lambda:clean && npm run frontend:clean",
+    "build": "npm run lambda:build && npm run frontend:build",
+    "deploy": "npm run lambda:deploy && npm run frontend:deploy",
+    "release": "npm run cloudformation:release && npm run lambda:release && npm run frontend:release",
+    "start": "npm run frontend:start",
+    "codecov": "cat packages/frontend/coverage/lcov.info packages/lambda/coverage/lcov.info | codecov"
+  },
+  "author": "Kishin Yagami, Avinash Erupaka",
+  "license": "Apache-2.0"
+}

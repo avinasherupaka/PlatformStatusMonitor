@@ -1,0 +1,37 @@
+.container {
+  padding: 8px;
+
+  > ul {
+    background-color: #FFFFFF;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.timeframes {
+  float: right;
+}
+
+.timeframe {
+  color: rgba(0,0,0,.54);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #CCCCCC;
+}
+
+.timeframe-left {
+  color: rgba(0,0,0,.54);
+}
+
+.timeframe-checked {
+  color: rgb(0,0,0);
+}

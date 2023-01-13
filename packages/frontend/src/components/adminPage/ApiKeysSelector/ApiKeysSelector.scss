@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.label {
+  color: #607D8B;
+  font-size: 14px;
+}
+
+.item {
+  padding-top: 4px;
+  display: flex;
+  width: 100%;
+  line-height: 16px;
+}
+
+.key-created {
+  display: inline;
+  width: 100%;
+}
+
+.key-not-created {
+  color: rgba(0,0,0,.30);
+}
+
+.created-at {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding: 4px 4px;
+  color: rgba(0,0,0,.30);
+  white-space: nowrap;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.delete-icon {
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.add-icon {
+  cursor: pointer;
+  padding-top: 8px;
+  text-align: right;
+
+  > i {
+    font-size: 16px;
+  }
+}
